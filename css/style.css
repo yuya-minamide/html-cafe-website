@@ -1,0 +1,238 @@
+/* header */
+#header-container {
+	width: 100%;
+	background-image: url(../image/main.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#nav-bar {
+	position: fixed;
+	z-index: 10;
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 100%;
+	top: 0;
+}
+
+#logo {
+	padding-left: 20px;
+}
+
+#logo img {
+	width: 80px;
+}
+
+#nav-menu {
+	display: flex;
+}
+
+#nav-menu a {
+	color: #000;
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+#header-title {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 36px;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 5px;
+}
+
+.section {
+	padding: 40px 60px;
+}
+
+.title-container {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.icon {
+	margin-bottom: 20px;
+}
+
+.title {
+	letter-spacing: 5px;
+}
+.title span {
+	border-bottom: solid 2px #000;
+}
+
+/*　main　*/
+.section-container {
+	margin: 40px 0;
+}
+
+/*　description　*/
+#description-container {
+	background-image: url(../image/concept.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 80px 0;
+}
+
+#description {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 50%;
+	margin-left: 30px;
+	padding: 30px 20px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+#description span {
+	color: rgb(173, 137, 28);
+}
+
+/*　menu　*/
+#menu {
+	background-color: rgb(249, 250, 251);
+	padding-bottom: 10px;
+}
+
+.menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+}
+
+.food-image {
+	width: 48%;
+	margin-bottom: 30px;
+	display: block;
+	position: relative;
+}
+
+.food-image img {
+	width: 100%;
+}
+
+.food-image::before,
+.food-image::after {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	content: "";
+	width: 50%;
+	height: 99.5%;
+	background: #333;
+	opacity: 0.4;
+	transform: scale(0, 1);
+	transition: transform 0.3s;
+}
+.food-image::before {
+	left: 0;
+	transform-origin: left top;
+}
+.food-image::after {
+	right: 0;
+	transform-origin: right top;
+}
+.food-image:hover::before,
+.food-image:hover::after {
+	transform: scale(1, 1);
+}
+
+.caption {
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	font-size: 130%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	-webkit-transition: all 0.4s step-end;
+	transition: all 0.4s step-end;
+	display: flex;
+	align-items: center;
+}
+.food-image:hover .caption {
+	visibility: visible;
+}
+.caption p {
+	color: #fff;
+	opacity: 0;
+	text-align: left;
+}
+.food-image:hover .caption p {
+	opacity: 0.7;
+}
+.cap-1 {
+	padding-left: 40px;
+	display: inline;
+	font-size: 40px;
+}
+
+#drink {
+	background-image: url(../image/coffee-back.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+}
+
+/*　store information　*/
+.store-container {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+
+.g-map {
+	width: 45%;
+}
+
+.store-information {
+	display: flex;
+	align-items: center;
+	border-left: solid 1px #000;
+	margin-left: 20px;
+	padding-left: 20px;
+	width: 45%;
+}
+
+.store-information p {
+	margin: 10px;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+.store-information p span {
+	border-bottom: solid 1px #000;
+}
+
+/*　footer　*/
+#footer {
+	text-align: center;
+	background-color: #d9d9d9;
+}
+
+#footer-icon {
+	padding-top: 30px;
+}
+
+.footer-icon {
+	padding: 0 10px 20px 10px;
+}
+
+#copy-right {
+	font-size: 10px;
+	padding-bottom: 24px;
+}
