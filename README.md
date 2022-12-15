@@ -4,7 +4,7 @@
 
 ## Description
 
-This website is a landing page of a cafe that handles organic food.
+This website is a landing page of a cafe that handles organic food
 
 ## Technologies Used
 
